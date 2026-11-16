@@ -1,6 +1,9 @@
 <!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#080c12"><meta name="description" content="SAN1Y OS – Linux-basiertes Betriebssystemprojekt von Sascha Santori. Konzeptbilder, Entwicklungsstand und Roadmap."><title>SAN1Y OS | NEXT LEVEL</title><link rel="icon" href="assets/logo.webp" type="image/webp"><style>
 :root{color-scheme:dark;--bg:#080c12;--surface:#121b28;--blue:#08baff;--fg:#ecf5ff;--muted:#a3b1c2}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 0,#0a2850 0,transparent 35%),var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Arial,sans-serif}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid #78ff83;outline-offset:4px}img{max-width:100%;display:block}header{position:sticky;z-index:10;top:0;background:#070d18e8;border-bottom:1px solid #1f5080;backdrop-filter:blur(16px)}.nav{max-width:1200px;margin:auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.1em}.brand img{width:48px;height:48px;object-fit:contain}.navlinks{display:flex;gap:21px;flex-wrap:wrap;font-size:14px;color:#c9daeb}.navlinks a:hover{color:var(--blue)}main{overflow:hidden}.wrap{max-width:1200px;margin:auto;padding:0 22px}.hero{position:relative;text-align:center;padding:65px 0 85px}.eyebrow{color:#66d6ff;text-transform:uppercase;font-size:12px;letter-spacing:.25em;font-weight:750}.hero h1{font-size:clamp(42px,8vw,86px);line-height:1.06;margin:10px 0 2px;letter-spacing:.04em;text-shadow:0 0 40px #008cff90}.hero h2{margin:0;font-size:clamp(18px,3vw,29px);color:#c9d9ee;font-weight:450;letter-spacing:.25em}.intro{max-width:720px;margin:25px auto;color:var(--muted)}.hero-img{width:min(720px,100%);margin:15px auto 10px;filter:drop-shadow(0 0 24px #007bff40)}.btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{border:1px solid #148dc2;border-radius:12px;padding:12px 22px;font-weight:750;background:#112337;display:inline-block;cursor:pointer}.btn.primary{background:linear-gradient(135deg,#0061a8,#04adff);border-color:#66dcff;color:#fff;box-shadow:0 0 22px #008cfb55}.btn:hover{transform:translateY(-2px)}section{padding:70px 0}.section-title{font-size:clamp(27px,4vw,44px);margin:10px 0}.sub{color:var(--muted);max-width:770px;margin:0 0 30px}.alt{background:linear-gradient(180deg,#0b1421,#0c1624 70%,#080c12)}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.shot{border:1px solid #31537b;border-radius:18px;overflow:hidden;text-align:left;color:inherit;background:#111b29;padding:0;cursor:pointer;box-shadow:0 10px 35px #0004;transition:.2s}.shot:hover{border-color:var(--blue);transform:translateY(-4px)}.shot img{width:100%;height:205px;object-fit:cover}.shot span{display:block;padding:14px 18px}.shot small{display:block;color:var(--muted)}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{padding:23px;border-radius:18px;background:#111c2a;border:1px solid #254563}.feature h3{margin:9px 0}.feature p{color:var(--muted);margin-bottom:22px}.symbol{font-size:14px;font-weight:800;color:var(--blue)}.tag{border-radius:100px;border:1px solid #36728b;color:#98dff8;font-size:12px;padding:5px 10px}.status{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{padding:28px;border:1px solid #2b4c6b;border-radius:20px;background:#111a29}.panel h3{margin-top:0}.panel ul{padding-left:21px;color:var(--muted)}.panel li{margin:9px 0}.developer{display:grid;grid-template-columns:.75fr 1.25fr;gap:35px;align-items:center;border:1px solid #28577e;background:linear-gradient(125deg,#11253a,#0b111c);border-radius:26px;overflow:hidden;padding:20px 38px 0}.developer img{width:100%;max-height:500px;object-fit:contain;object-position:bottom;align-self:end;filter:drop-shadow(0 0 35px #128dff65)}.developer h2{font-size:clamp(30px,5vw,52px);line-height:1.1;margin:5px 0 12px}.developer p{color:var(--muted)}.notice{border-left:3px solid var(--blue);padding:13px 17px;color:var(--muted);background:#112237;border-radius:5px}.center{text-align:center}.center .sub{margin:0 auto 25px}footer{border-top:1px solid #28425c;color:#93a6bb;padding:28px 15px;text-align:center;font-size:13px}dialog{background:#050911;border:1px solid #2888ce;border-radius:18px;max-width:min(96vw,1300px);max-height:95vh;padding:17px;color:white}dialog::backdrop{background:#000d}dialog img{max-height:76vh;width:auto;margin:auto;object-fit:contain}dialog .top{display:flex;justify-content:space-between;align-items:center;gap:25px;margin-bottom:10px}dialog button{cursor:pointer;background:#12334e;border:1px solid #367aa6;color:white;border-radius:8px;padding:8px 13px}@media(max-width:850px){.gallery,.features{grid-template-columns:repeat(2,1fr)}.navlinks{gap:11px;font-size:12px}.developer{grid-template-columns:1fr 1.2fr;padding:10px 18px 0}}@media(max-width:560px){.nav{align-items:flex-start}.brand{font-size:14px}.brand img{width:36px;height:36px}.navlinks{justify-content:end;max-width:210px}.hero{padding:45px 0}.gallery,.features,.status{grid-template-columns:1fr}.shot img{height:auto;aspect-ratio:16/9;object-fit:cover}.developer{display:flex;flex-direction:column-reverse;align-items:center;gap:0;padding:22px 20px 0}.developer img{max-height:300px;max-width:310px}.developer .info{text-align:center}.section-title{line-height:1.2}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-.supportgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}.supportbox{border:1px solid #295b87;background:linear-gradient(145deg,#12273b,#0b1320);border-radius:22px;padding:28px}.supportbox h3{margin:0 0 10px;font-size:25px}.supportbox p{color:var(--muted)}.supportbox .btn{margin-top:14px}.qr-frame{background:#f3f6fa;border-radius:18px;padding:12px;width:min(230px,100%);margin:18px auto}.qr-frame img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain}.contact-link{display:inline-block;overflow-wrap:anywhere;color:#8bddff;text-decoration:underline;text-underline-offset:4px;font-weight:700}.supportbox .hint{font-size:13px}.supportbox a:hover{text-decoration:underline}@media(max-width:700px){.supportgrid{grid-template-columns:1fr}.supportbox{padding:22px}}</style></head><body><header><div class="nav"><a class="brand" href="#start"><img src="assets/logo.webp" alt="SAN1Y OS Schloss-Logo"><span>SAN1Y OS</span></a><nav class="navlinks" aria-label="Hauptnavigation"><a href="#vorschau">Vorschau</a><a href="#funktionen">Funktionen</a><a href="#status">Status</a><a href="#entwickler">Entwickler</a><a href="#unterstuetzen">Spenden & Kontakt</a></nav></div></header><main><section class="hero" id="start"><div class="wrap"><div class="eyebrow">MULTI OS · OPEN SYSTEM · NEXT LEVEL</div><img class="hero-img" src="assets/hero.webp" alt="SAN1Y OS Hauptbild mit Schloss und Weltkugel"><h1>SAN1Y OS</h1><h2>NEXT LEVEL</h2><p class="intro">Ein Linux-basiertes Betriebssystemprojekt mit eigener Designsprache, modularen Werkzeugen und der Vision einer flexiblen, individuell gestaltbaren Desktop-Erfahrung.</p><div class="btns"><a class="btn primary" href="#vorschau">Design entdecken</a><a class="btn" href="#status">Entwicklungsstand</a></div></div></section><section class="alt" id="vorschau"><div class="wrap"><div class="eyebrow">Konzeptbilder</div><h2 class="section-title">Einblicke in SAN1Y OS</h2><p class="sub">Visuelle Entwürfe für Bootscreen, Anmeldung und Desktop. Diese Bilder sind Designvorschauen und keine Belege für bereits vollständig implementierte Funktionen. Antippen zum Vergrößern.</p><div class="gallery"><button class="shot" type="button" data-img="assets/coming.webp" data-title="Coming Soon"><img loading="lazy" src="assets/coming.webp" alt="Coming Soon"><span><b>Coming Soon</b><small>Ankündigung</small></span></button>
+.supportgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}.supportbox{border:1px solid #295b87;background:linear-gradient(145deg,#12273b,#0b1320);border-radius:22px;padding:28px}.supportbox h3{margin:0 0 10px;font-size:25px}.supportbox p{color:var(--muted)}.supportbox .btn{margin-top:14px}.qr-frame{background:#f3f6fa;border-radius:18px;padding:12px;width:min(230px,100%);margin:18px auto}.qr-frame img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain}.contact-link{display:inline-block;overflow-wrap:anywhere;color:#8bddff;text-decoration:underline;text-underline-offset:4px;font-weight:700}.supportbox .hint{font-size:13px}.supportbox a:hover{text-decoration:underline}@media(max-width:700px){.supportgrid{grid-template-columns:1fr}.supportbox{padding:22px}}
+/* SAN1Y OS – Projektinfo 253 */
+section[id]{scroll-margin-top:105px}.project-section{background:linear-gradient(180deg,#08111d,#10243b 47%,#08111d)}.project-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0 30px}.project-kpis>div{background:#0e2034;border:1px solid #2d608c;border-radius:16px;padding:17px}.project-kpis b{display:block;color:#e8f5ff;font-size:17px}.project-kpis span{display:block;color:#9eb6ce;font-size:13px;margin-top:3px}.chapter-list{display:grid;gap:12px}.info-chapter{background:#0e1b2d;border:1px solid #244b71;border-radius:16px;overflow:hidden}.info-chapter[open]{border-color:#168aca;background:#0c1b2c}.info-chapter summary{display:flex;gap:15px;align-items:center;padding:18px 20px;cursor:pointer;list-style:none;font-size:17px;font-weight:750;line-height:1.35}.info-chapter summary::-webkit-details-marker{display:none}.info-chapter summary:hover{background:#142b45}.chapter-index{color:#55caff;font-size:13px;letter-spacing:.1em}.chapter-plus{margin-left:auto;color:#61cbff;font-size:23px;line-height:1}.info-chapter[open] .chapter-plus{transform:rotate(45deg)}.chapter-content{border-top:1px solid #234867;padding:22px;color:#bacbdd;overflow-wrap:anywhere}.chapter-content h3{color:#e8f5ff;margin:25px 0 10px;font-size:18px}.chapter-content h3:first-child{margin-top:0}.chapter-content p{line-height:1.75}.chapter-content strong{color:#eff8ff}.chapter-content ul,.chapter-content ol{padding-left:22px}.chapter-content li{margin:8px 0}.chapter-content a{color:#7fd5ff;text-decoration:underline;text-underline-offset:3px}.chapter-content pre{background:#060d18;border:1px solid #2c5070;border-radius:10px;padding:15px;overflow-x:auto;font-size:13px}.chapter-content code{background:#07131f;padding:2px 4px;border-radius:4px}.chapter-content pre code{background:none;padding:0}.chapter-content table{border-collapse:collapse;width:100%;min-width:480px;font-size:14px}.chapter-content th,.chapter-content td{border-bottom:1px solid #294762;padding:10px;text-align:left;vertical-align:top}.chapter-content th{background:#142d46;color:#eef7ff}.chapter-content .table-scroll{overflow-x:auto;width:100%}.chapter-content blockquote{border-left:3px solid #00aaff;margin:16px 0;padding:7px 17px;background:#132a40;border-radius:4px}.project-footnote{color:#93b2ca;font-size:13px;margin-top:20px}@media(max-width:650px){.project-kpis{grid-template-columns:1fr}.info-chapter summary{padding:15px 13px;font-size:15px;gap:10px}.chapter-content{padding:16px 13px}.chapter-content table{min-width:450px}}
+</style></head><body><header><div class="nav"><a class="brand" href="#start"><img src="assets/logo.webp" alt="SAN1Y OS Schloss-Logo"><span>SAN1Y OS</span></a><nav class="navlinks" aria-label="Hauptnavigation"><a href="#vorschau">Vorschau</a><a href="#funktionen">Funktionen</a><a href="#status">Status</a><a href="#projektinfo">Projektinfo</a><a href="#entwickler">Entwickler</a><a href="#unterstuetzen">Spenden & Kontakt</a></nav></div></header><main><section class="hero" id="start"><div class="wrap"><div class="eyebrow">MULTI OS · OPEN SYSTEM · NEXT LEVEL</div><img class="hero-img" src="assets/hero.webp" alt="SAN1Y OS Hauptbild mit Schloss und Weltkugel"><h1>SAN1Y OS</h1><h2>NEXT LEVEL</h2><p class="intro">Ein Linux-basiertes Betriebssystemprojekt mit eigener Designsprache, modularen Werkzeugen und der Vision einer flexiblen, individuell gestaltbaren Desktop-Erfahrung.</p><div class="btns"><a class="btn primary" href="#vorschau">Design entdecken</a><a class="btn" href="#status">Entwicklungsstand</a><a class="btn" href="#projektinfo">Projektinformationen</a></div></div></section><section class="alt" id="vorschau"><div class="wrap"><div class="eyebrow">Konzeptbilder</div><h2 class="section-title">Einblicke in SAN1Y OS</h2><p class="sub">Visuelle Entwürfe für Bootscreen, Anmeldung und Desktop. Diese Bilder sind Designvorschauen und keine Belege für bereits vollständig implementierte Funktionen. Antippen zum Vergrößern.</p><div class="gallery"><button class="shot" type="button" data-img="assets/coming.webp" data-title="Coming Soon"><img loading="lazy" src="assets/coming.webp" alt="Coming Soon"><span><b>Coming Soon</b><small>Ankündigung</small></span></button>
 <button class="shot" type="button" data-img="assets/desktop.webp" data-title="Desktop & Explorer"><img loading="lazy" src="assets/desktop.webp" alt="Desktop & Explorer"><span><b>Desktop & Explorer</b><small>Oberflächenkonzept</small></span></button>
 <button class="shot" type="button" data-img="assets/login.webp" data-title="Anmeldung"><img loading="lazy" src="assets/login.webp" alt="Anmeldung"><span><b>Anmeldung</b><small>Login-Konzept</small></span></button>
 <button class="shot" type="button" data-img="assets/wallpaper.webp" data-title="Desktop-Hintergrund"><img loading="lazy" src="assets/wallpaper.webp" alt="Desktop-Hintergrund"><span><b>Desktop-Hintergrund</b><small>Design</small></span></button>
@@ -10,4 +13,297 @@
 <article class="feature"><span class="symbol">03</span><h3>Multi-Plattform</h3><p>Linux-Apps sowie Windows- und Android-Anwendungen, soweit kompatibel.</p><span class="tag">Geplant</span></article>
 <article class="feature"><span class="symbol">04</span><h3>Security Lab</h3><p>Isolierte Analyse-, Diagnose- und Sicherheitstestumgebungen.</p><span class="tag">Geplant</span></article>
 <article class="feature"><span class="symbol">05</span><h3>Cloud & Backups</h3><p>Lokale Datenträger, NAS und Cloud mit Wiederherstellungsoptionen.</p><span class="tag">Geplant</span></article>
-<article class="feature"><span class="symbol">06</span><h3>System Health</h3><p>Hardwareüberwachung und nachvollziehbare Reparaturvorschläge.</p><span class="tag">Geplant</span></article></div></div></section><section class="alt" id="status"><div class="wrap"><div class="eyebrow">Projektstand · 16. November 2026</div><h2 class="section-title">Entwicklung transparent gemacht</h2><div class="status"><div class="panel"><h3>Dokumentierter Stand</h3><ul><li>Basis: Ubuntu 24.04 und Xfce</li><li>Developer-ISO 230 erstellt</li><li>BIOS-/UEFI-Booteinträge für ISO 230 dokumentiert</li><li>Style Studio V1 syntaktisch geprüft</li><li>Terminal-Designprofil und erste Entwicklerwerkzeuge vorbereitet</li></ul></div><div class="panel"><h3>Offene Aufgaben</h3><ul><li>ISO 247: Existenz, Prüfsumme und Bootfähigkeit prüfen</li><li>Bootanimation und Login weiterentwickeln</li><li>Deutsche Oberfläche vervollständigen</li><li>Grafische Einstellungen und Performance verbessern</li><li>Dual-Boot-Installer sicher testen</li></ul></div></div><p class="notice">Keine öffentliche stabile ISO-Freigabe bestätigt. Downloads werden erst angeboten, sobald ein Build ausreichend geprüft und zur Veröffentlichung freigegeben wurde.</p></div></section><section id="entwickler"><div class="wrap"><div class="developer"><img src="assets/developer.webp" alt="Entwicklerporträt von Sascha Santori"><div class="info"><div class="eyebrow">Gründer & Entwickler</div><h2>Sascha Santori</h2><p>SAN1Y OS steht für die Idee, moderne Gestaltung, technische Freiheit und flexible Systemwerkzeuge in einem eigenen Linux-basierten Projekt zu vereinen.</p><p><strong>Ein Projekt. Eine Vision. NEXT LEVEL.</strong></p></div></div></div></section><section class="alt center" id="download"><div class="wrap"><div class="eyebrow">Release-Status</div><h2 class="section-title">COMING SOON</h2><p class="sub">SAN1Y OS wird weiterentwickelt. Ein öffentlicher Systemdownload ist noch nicht freigegeben.</p><a href="https://github.com/san1y777" class="btn" rel="noopener noreferrer" target="_blank">GitHub-Profil besuchen</a></div></section><section class="alt" id="unterstuetzen"><div class="wrap"><div class="eyebrow">Support & Kontakt</div><h2 class="section-title">SAN1Y OS unterstützen</h2><p class="sub">Du möchtest die unabhängige Entwicklung unterstützen oder eine Zusammenarbeit vorschlagen? Hier findest du die passenden Kontaktmöglichkeiten.</p><div class="supportgrid"><article class="supportbox"><h3>Projekt unterstützen</h3><p>Freiwillige Spenden helfen bei der Weiterentwicklung von SAN1Y OS. Es besteht keine Verpflichtung zu spenden.</p><div class="qr-frame"><img src="assets/paypal-qr.png" loading="lazy" alt="Bereitgestellter PayPal-QR-Code für freiwillige Spenden" width="600" height="600"></div><p class="center hint">PayPal-QR-Code scannen oder den Link öffnen.</p><div class="center"><a class="btn primary" href="https://www.paypal.me/sani1y" target="_blank" rel="noopener noreferrer">Über PayPal spenden</a></div></article><article class="supportbox"><h3>Zusammenarbeit & Anfragen</h3><p>Für Projektideen, technische Zusammenarbeit, Feedback oder andere Anfragen rund um SAN1Y OS.</p><p><a class="contact-link" href="mailto:san1y777@icloud.com">san1y777@icloud.com</a></p><a class="btn" href="mailto:san1y777@icloud.com?subject=SAN1Y%20OS%20%E2%80%93%20Zusammenarbeit">E-Mail schreiben</a><p class="hint">Bitte keine Passwörter, vertraulichen Daten oder Zugangscodes per E-Mail senden.</p></article></div></div></section></main><footer>© 2026 SAN1Y OS · Projekt von Sascha Santori · Unabhängiges Projekt, keine Verbindung zu genannten Plattformherstellern.</footer><dialog id="viewer" aria-label="Bildvorschau"><div class="top"><strong id="viewer-title">Vorschau</strong><button id="close-viewer" type="button">Schließen ×</button></div><img id="viewer-img" alt="Vergrößerte Konzeptvorschau"></dialog><script>const viewer=document.getElementById('viewer');document.querySelectorAll('.shot').forEach(el=>el.addEventListener('click',()=>{document.getElementById('viewer-img').src=el.dataset.img;document.getElementById('viewer-img').alt=el.dataset.title;document.getElementById('viewer-title').textContent=el.dataset.title;viewer.showModal()}));document.getElementById('close-viewer').addEventListener('click',()=>viewer.close());viewer.addEventListener('click',e=>{if(e.target===viewer)viewer.close()});</script></body></html>
+<article class="feature"><span class="symbol">06</span><h3>System Health</h3><p>Hardwareüberwachung und nachvollziehbare Reparaturvorschläge.</p><span class="tag">Geplant</span></article></div></div></section><section class="alt" id="status"><div class="wrap"><div class="eyebrow">Projektstand · 16. November 2026</div><h2 class="section-title">Entwicklung transparent gemacht</h2><div class="status"><div class="panel"><h3>Dokumentierter Stand</h3><ul><li>Basis: Ubuntu 24.04 und Xfce</li><li>Developer-ISO 230 erstellt</li><li>BIOS-/UEFI-Booteinträge für ISO 230 dokumentiert</li><li>Style Studio V1 syntaktisch geprüft</li><li>Terminal-Designprofil und erste Entwicklerwerkzeuge vorbereitet</li></ul></div><div class="panel"><h3>Offene Aufgaben</h3><ul><li>ISO 247: Existenz, Prüfsumme und Bootfähigkeit prüfen</li><li>Bootanimation und Login weiterentwickeln</li><li>Deutsche Oberfläche vervollständigen</li><li>Grafische Einstellungen und Performance verbessern</li><li>Dual-Boot-Installer sicher testen</li></ul></div></div><p class="notice">Keine öffentliche stabile ISO-Freigabe bestätigt. Downloads werden erst angeboten, sobald ein Build ausreichend geprüft und zur Veröffentlichung freigegeben wurde.</p></div></section><section id="projektinfo" class="alt project-section"><div class="wrap"><div class="eyebrow">Das Projekt im Detail</div><h2 class="section-title">SAN1Y OS – Projektinformationen</h2><p class="sub">Die vollständigen Informationen aus der README: technische Grundlagen, Design, Funktionen, Builds, Sicherheitsregeln, Roadmap und Kontakt. Tippe auf ein Kapitel, um es zu öffnen. Stand der Dokumentation: 16. November 2026, Master-Backup 249.</p><div class="project-kpis"><div><b>Ubuntu 24.04 LTS</b><span>Linux-Basis</span></div><div><b>Xfce</b><span>Desktop-Grundlage</span></div><div><b>Entwicklungsphase</b><span>Keine stabile Veröffentlichung</span></div></div><div class="chapter-list"><details class="info-chapter" id="kapitel-1-was-ist-san1y-os" open><summary><span class="chapter-index">01</span><span>Was ist SAN1Y OS?</span><span class="chapter-plus" aria-hidden="true">+</span></summary><div class="chapter-content">
+<p><strong>SAN1Y OS</strong> ist ein eigenständiges Betriebssystemprojekt auf Linux-Basis. Das Ziel ist, eine moderne, schnelle und anpassbare Arbeitsumgebung zu schaffen, die hochwertige Gestaltung, Sicherheit, Entwicklerwerkzeuge und – soweit technisch möglich – Anwendungen verschiedener Plattformen zusammenführt.</p>
+<p>Im Mittelpunkt stehen <strong>Stabilität, Geschwindigkeit, Sicherheit, Datenschutz und individuelles Design</strong>. Nicht die Anzahl installierter Programme zählt, sondern eine zuverlässig funktionierende, nachvollziehbar getestete Integration.</p>
+<blockquote>
+<p><strong>Wichtiger Hinweis:</strong> SAN1Y OS befindet sich in Entwicklung. Die auf der Webseite gezeigten Oberflächen und Bildschirme sind teilweise <strong>Designkonzepte</strong> und kein Beleg für bereits vollständig implementierte Funktionen. Es gibt zum Stand dieses Dokuments <strong>keine als stabil freigegebene öffentliche ISO</strong> und <strong>keinen abschließend getesteten Installationsablauf</strong>.</p>
+</blockquote>
+</div></details><details class="info-chapter" id="kapitel-2-technische-grundlage" ><summary><span class="chapter-index">02</span><span>Technische Grundlage</span><span class="chapter-plus" aria-hidden="true">+</span></summary><div class="chapter-content">
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Bereich</th>
+<th>Derzeitige Grundlage / Ziel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basis</td>
+<td>Ubuntu 24.04 LTS „Noble“</td>
+</tr>
+<tr>
+<td>Architektur</td>
+<td>x86_64</td>
+</tr>
+<tr>
+<td>Desktop</td>
+<td>Xfce als bisherige Arbeitsgrundlage</td>
+</tr>
+<tr>
+<td>Oberfläche</td>
+<td>Eigenständiges SAN1Y-Design, in Entwicklung</td>
+</tr>
+<tr>
+<td>Sprache</td>
+<td>Deutsch als geplante Standardsprache; noch nicht überall umgesetzt</td>
+</tr>
+<tr>
+<td>Terminal</td>
+<td>Xfce Terminal im SAN1Y-System</td>
+</tr>
+<tr>
+<td>Editionen</td>
+<td>Standard und Developer Edition vorgesehen</td>
+</tr>
+<tr>
+<td>Virtualisierung</td>
+<td>Schwerpunkt QEMU/KVM</td>
+</tr>
+<tr>
+<td>Boot</td>
+<td>BIOS/UEFI-Bootkonzepte und Tests in früheren Builds</td>
+</tr>
+<tr>
+<td>Installation</td>
+<td>Langfristig sicherer Multiboot neben bestehenden Systemen</td>
+</tr>
+</tbody>
+</table></div>
+</div></details><details class="info-chapter" id="kapitel-3-gestaltung-und-benutzererlebnis" ><summary><span class="chapter-index">03</span><span>Gestaltung und Benutzererlebnis</span><span class="chapter-plus" aria-hidden="true">+</span></summary><div class="chapter-content">
+<p>Die Designrichtung heißt <strong>Cyber / Dark Liquid Glass</strong>: dunkle, möglichst transparente Fenster, elektrische blaue Akzente, silberne Menüs, abgerundete Oberflächen und dezente Animationen.</p>
+<p><strong>Vorgesehene Farbpalette:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Farbe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hintergrund</td>
+<td><code>#101114</code></td>
+</tr>
+<tr>
+<td>Fenster</td>
+<td><code>#1C1D22</code></td>
+</tr>
+<tr>
+<td>Panels</td>
+<td><code>#25272D</code></td>
+</tr>
+<tr>
+<td>Menüschrift</td>
+<td><code>#C0C5CE</code></td>
+</tr>
+<tr>
+<td>Terminal</td>
+<td>Hintergrund <code>#080C12</code>, Schrift <code>#78FF83</code></td>
+</tr>
+<tr>
+<td>Akzent</td>
+<td>Leuchtendes Blau</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Designziele:</strong></p>
+<ul>
+<li>Transparente Fenster, Neon-Outlines und ressourcenschonende Effekte</li>
+<li>Modernes Dock <strong>standardmäßig unten</strong>, später verschiebbar</li>
+<li>Anpassbare Icons, Schriftarten, Cursor, Farben und Fenstertransparenz</li>
+<li>Optionaler Hover-Zoom für Desktop-Symbole und Ordner</li>
+<li>Individuelle Desktop-Hintergründe, Login- und Sperrbildschirme</li>
+<li>Eigene Boot- und GRUB-Gestaltung</li>
+</ul>
+<p><strong>Aktueller Stand:</strong> Die visuellen Vorlagen zeigen die beabsichtigte Richtung. Vollständige Umsetzung und Performancetests stehen noch aus.</p>
+</div></details><details class="info-chapter" id="kapitel-4-funktionen-und-entwicklungsziele" ><summary><span class="chapter-index">04</span><span>Funktionen und Entwicklungsziele</span><span class="chapter-plus" aria-hidden="true">+</span></summary><div class="chapter-content">
+<h3>Personalisierung – SAN1Y Style Studio Pro</h3>
+<p>Eine grafische Designzentrale mit Farbkreis, HEX-Eingabe, Themes, Import/Export, Transparenz-, Icon-, Cursor-, Schrift- und Dock-Einstellungen, Vorschau und Rückgängig-Funktion.</p>
+<p><strong>Stand:</strong> Ein früher <strong>Style Studio V1</strong>-Starter auf Bash/xmessage-Basis wurde entwickelt und syntaktisch geprüft. Die geplante High-End-GTK-Version ist noch nicht als funktionsfähig bestätigt. Die Akzentfarb-App startet derzeit nicht zuverlässig.</p>
+<h3>Developer Hub</h3>
+<p>Geplant sind Git-Repositories, Klonen, ZIP-Import, Codeeditor, Projektverwaltung, Build-Pipelines, Abhängigkeitsprüfung sowie ein App Maker, Website-zu-App-Konverter und Programmiersprachen-Konverter.</p>
+<p><strong>Stand:</strong> Git, SSH und Mac-Bridge-Funktionen wurden in früheren Live-Systemen getestet; sechs zusätzliche Git-Webstarter sind laut Projektdokumentation eingebunden. Das ist <strong>keine</strong> bestätigte Installation sämtlicher Git-Plattformserver.</p>
+<h3>Plattformübergreifende Software</h3>
+<ul>
+<li><strong>Linux:</strong> APT, Flatpak/Flathub, AppImage und geeignete Softwarezentralen</li>
+<li><strong>Windows:</strong> Prüfung von Wine, Bottles sowie Windows in virtuellen Maschinen</li>
+<li><strong>Android:</strong> Prüfung von Waydroid beziehungsweise Android-VMs</li>
+</ul>
+<p><strong>Stand:</strong> Breite Windows-/Android-Kompatibilität ist ein Ziel, noch keine zugesicherte Funktion. Windows Store und <code>winget</code> wären nur in einer passenden Windows-Umgebung nutzbar.</p>
+<h3>Virtuelle Maschinen und Security Lab</h3>
+<p>QEMU/KVM steht im Zentrum. Geplant sind Windows- und Android-VMs sowie ein <strong>isoliertes Kali Security Lab</strong> für autorisierte Sicherheitsprüfungen und Lernen. Historische BackTrack-Software wird nicht als ungeschützte Produktivumgebung eingesetzt.</p>
+<p><strong>Stand:</strong> Virtualisierungs- und Boot-Tests wurden durchgeführt; neuere grafische Tests und Performanceoptimierungen sind offen.</p>
+<h3>Lokale KI und kreative Werkzeuge</h3>
+<p>Geplant sind lokale KI-Modelle mit geeigneten Laufzeiten wie Ollama/llama.cpp, KI-Chat, Codeassistenz, Bild-/Videowerkzeuge, Prompt-zu-Skript, Video-zu-PDF und Modellverwaltung.</p>
+<p><strong>Stand:</strong> Forschungs- und Integrationsziele; die genannten externen Projekte sind nicht automatisch installiert oder getestet.</p>
+<h3>Cloud, Backups und Wiederherstellung</h3>
+<p>Vorgesehen sind Backups auf interne/externe Datenträger, USB, NAS, private Server und geeignete Cloud-Dienste. Geplant sind inkrementelle und verschlüsselte Backups, Snapshots, Systemabbilder, Restore-Assistenten und echte Wiederherstellungstests.</p>
+<h3>Systemgesundheit, Sicherheit und Auto-Fix</h3>
+<p>Geplant sind Hardwareüberwachung, Paket-/Konfigurationsdiagnose, Integritätsprüfungen, Firewall, Verschlüsselung, Sicherheitswarnungen und <strong>reversible</strong> Reparaturvorschläge. Persönliche Dateien sollen <strong>niemals ungefragt gelöscht</strong> werden.</p>
+<h3>Anmeldung und iPhone-Integration</h3>
+<p>Geplant sind Benutzerkonten, Passwort/PIN-Optionen, ein gestalteter Sperrbildschirm und die Erforschung einer iPhone-gestützten Freigabe. <strong>Face ID über iPhone ist bislang ein Entwicklungsziel, keine funktionierende Linux-Anmeldemethode in SAN1Y OS.</strong></p>
+<h3>Installation, Updates und Multiboot</h3>
+<p>Langfristiges Ziel ist eine geprüfte Installation neben Windows oder Linux, mit Backup, Prüfung der Partitionstabelle, Schutz bestehender Bootloader und ausdrücklicher Zustimmung für riskante Änderungen. Eine eigene signierte Update-Infrastruktur ist vorgesehen.</p>
+<p><strong>Stand:</strong> Ein realer, vollständig getesteter Multiboot-Installer und ein fertiger eigener Updatekanal sind nicht bestätigt.</p>
+</div></details><details class="info-chapter" id="kapitel-5-bisherige-entwicklung-und-builds" ><summary><span class="chapter-index">05</span><span>Bisherige Entwicklung und Builds</span><span class="chapter-plus" aria-hidden="true">+</span></summary><div class="chapter-content">
+<p>Die Projektsicherung dokumentiert unter anderem diese Entwicklungsstufen:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Build / Meilenstein</th>
+<th>Dokumentierter Stand</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prototyp 135</td>
+<td>Frühe ISO</td>
+</tr>
+<tr>
+<td>GUI-Test 152</td>
+<td>Grafischer ISO-Test</td>
+</tr>
+<tr>
+<td>Dark 174 / 179</td>
+<td>Desktop- und Design-Tests</td>
+</tr>
+<tr>
+<td>Developer 208</td>
+<td>Früher UEFI-QEMU-Test nachgewiesen</td>
+</tr>
+<tr>
+<td>Developer 221</td>
+<td>BIOS-/UEFI-Tests laut Nutzer erfolgreich</td>
+</tr>
+<tr>
+<td>Developer 230</td>
+<td>ISO erstellt, BIOS-/UEFI-Booteinträge vorhanden; vollständige Grafik-/UEFI-Gasttests nicht abschließend dokumentiert</td>
+</tr>
+<tr>
+<td>Rootfs 234</td>
+<td>Auf dem Entwicklungsrechner als vorhanden bestätigt</td>
+</tr>
+<tr>
+<td>Developer 247</td>
+<td>Build vorbereitet; tatsächlicher Dateibestand, SHA256 und Bootfähigkeit noch nicht verifiziert</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Technische Referenz für Build 230:</strong> Kernel <code>6.8.0-149-generic</code>, SquashFS 4.0 mit XZ-Komprimierung, BIOS-/UEFI-El-Torito-Einträge; Live- und Diagnose-Menü vorhanden. Der dokumentierte SHA256-Wert der ISO lautet:</p>
+<pre><code class="language-text">SAN1Y-OS-DEV-230.iso
+1bdcd828788241d1b34edf3e87bfe28be6fb70b4b2fe12cd7ce109a9d5d1668b
+</code></pre>
+<p>Der Hash stammt aus der Projektsicherung. Er wurde <strong>nicht im Zuge dieser README unabhängig gegen eine lokale ISO geprüft</strong>.</p>
+<h3>Was als bestätigt gilt</h3>
+<ul>
+<li>Mehrere frühe ISO- und Rootfs-Entwicklungsstufen</li>
+<li>Vorhandensein von Rootfs 234 und ISO 230 laut bisheriger Projektdokumentation</li>
+<li>BIOS-/UEFI-Booteinträge in ISO 230</li>
+<li>Frühe Tests mit QEMU/UEFI und anderen Bootvarianten</li>
+<li>Style Studio V1 syntaktisch geprüft</li>
+<li>Terminal-Farbprofil in Rootfs 234 erstellt</li>
+<li>Git-/SSH-/Mac-Bridge-Tests aus früheren Entwicklungsphasen</li>
+</ul>
+<h3>Was noch nicht als fertig gilt</h3>
+<ul>
+<li>Vollständig funktionierende und verifizierte ISO 247</li>
+<li>Komplett deutsche Oberfläche</li>
+<li>Flüssige, reale Bootanimation und endgültiges Login-Design</li>
+<li>Zuverlässiges grafisches Style Studio mit Farbrad</li>
+<li>Windows-/Android-Kompatibilität in der gewünschten Breite</li>
+<li>Vollständiges Kali-Labor, Auto-Fix und iPhone-Entsperrung</li>
+<li>Sicher getesteter Multiboot-Installer und allgemeine Hardwarefreigabe</li>
+</ul>
+</div></details><details class="info-chapter" id="kapitel-6-aktuelle-probleme-und-priorit-ten" ><summary><span class="chapter-index">06</span><span>Aktuelle Probleme und Prioritäten</span><span class="chapter-plus" aria-hidden="true">+</span></summary><div class="chapter-content">
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Priorität</th>
+<th>Offener Punkt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P0</td>
+<td>QEMU-/Simulationsleistung verbessern</td>
+</tr>
+<tr>
+<td>P0</td>
+<td>Deutsche Sprache konsistent umsetzen</td>
+</tr>
+<tr>
+<td>P0</td>
+<td>Nicht startende Akzentfarb-App reparieren</td>
+</tr>
+<tr>
+<td>P0</td>
+<td>Fehlendes SAN1Y-Systemsymbol beheben</td>
+</tr>
+<tr>
+<td>P0</td>
+<td>Bootgrafik, Animation, Login und Sperrbildschirm implementieren und testen</td>
+</tr>
+<tr>
+<td>P0</td>
+<td>Terminal-Gast-Zwischenablage und GUI-Tests verbessern</td>
+</tr>
+<tr>
+<td>P0</td>
+<td>ISO 247 auf Existenz, SHA256 und Bootverhalten prüfen</td>
+</tr>
+<tr>
+<td>P1</td>
+<td>Farbkreis, Icons, Neonordner, Dock, Widgets und Softwaremanager weiterentwickeln</td>
+</tr>
+<tr>
+<td>P1</td>
+<td>Sichere Systemdiagnose und Auto-Fix vorbereiten</td>
+</tr>
+</tbody>
+</table></div>
+</div></details><details class="info-chapter" id="kapitel-7-roadmap" ><summary><span class="chapter-index">07</span><span>Roadmap</span><span class="chapter-plus" aria-hidden="true">+</span></summary><div class="chapter-content">
+<p>Die Reihenfolge ist <strong>geplant, keine Zusage für Veröffentlichungstermine</strong>.</p>
+<ol>
+<li><strong>Stabilität:</strong> Build-Dateien, KVM, ISO-Hashes, Geschwindigkeit, Sprache, GUI und Zwischenablage prüfen.</li>
+<li><strong>High-End-Design:</strong> Branding, Bootanimation, Dock, Fenster, Icons und Anmeldung verbessern.</li>
+<li><strong>Style Studio Pro:</strong> Grafik-App mit Farbrad, Profilen, Themes und Vorschau.</li>
+<li><strong>Softwarezentrale:</strong> Browser, Office/PDF, Multimedia, Kommunikation, Developer Hub und KI-Werkzeuge.</li>
+<li><strong>Multiplattform:</strong> Wine/Bottles, Windows-/Android-VMs und isoliertes Security Lab.</li>
+<li><strong>Cloud &amp; Sicherheit:</strong> Backups, Verschlüsselung, Updates, Auto-Fix und Wiederherstellung.</li>
+<li><strong>Installer:</strong> Überprüfte Dual-/Multiboot-Installation und Hardwaretests.</li>
+</ol>
+</div></details><details class="info-chapter" id="kapitel-8-sicherheit-und-verantwortliche-entwicklung" ><summary><span class="chapter-index">08</span><span>Sicherheit und verantwortliche Entwicklung</span><span class="chapter-plus" aria-hidden="true">+</span></summary><div class="chapter-content">
+<p>Bei SAN1Y OS gelten folgende Projektprinzipien:</p>
+<ul>
+<li>Keine Löschung oder Überschreibung alter ISO-/Rootfs-Bestände ohne Zustimmung.</li>
+<li>Keine Veränderung vorhandener Windows-/Linux-Partitionen oder Host-Bootloader ohne ausdrückliche Freigabe.</li>
+<li>Keine automatische Partitionierung und kein ungeprüftes Ausführen fremder Skripte als Root.</li>
+<li>Keine automatische Löschung vermeintlicher Duplikate oder persönlicher Daten.</li>
+<li>Backups, Wiederherstellbarkeit und Rollback vor kritischen Änderungen prüfen.</li>
+<li>Fremdsoftware zunächst hinsichtlich Lizenz, Abhängigkeiten, Berechtigungen und Risiken bewerten.</li>
+<li>Sicherheitswerkzeuge nur für eigene oder ausdrücklich autorisierte Systeme verwenden.</li>
+<li>Den Entwicklungsstatus transparent ausweisen: <strong>geplant ≠ implementiert ≠ getestet ≠ freigegeben</strong>.</li>
+</ul>
+</div></details><details class="info-chapter" id="kapitel-9-screenshots-und-designvorschauen" ><summary><span class="chapter-index">09</span><span>Screenshots und Designvorschauen</span><span class="chapter-plus" aria-hidden="true">+</span></summary><div class="chapter-content">
+<p>Screenshots, Bootgrafiken, das Schloss-Logo und die Desktopkonzepte sind auf der <a href="https://san1y777.github.io/">Projektwebseite</a> zu sehen. Sie zeigen die <strong>Designvision</strong>. Der technische Implementierungsgrad einzelner dargestellter Funktionen kann davon abweichen.</p>
+</div></details><details class="info-chapter" id="kapitel-10-download-und-installation" ><summary><span class="chapter-index">10</span><span>Download und Installation</span><span class="chapter-plus" aria-hidden="true">+</span></summary><div class="chapter-content">
+<p><strong>Aktuell kein allgemein freigegebener stabiler Download.</strong> Bitte verwende Entwicklungs-ISOs nicht ungeprüft auf produktiven Systemen und führe keine Partitionierungs- oder Bootloader-Änderungen ohne Sicherung durch.</p>
+<p>Sobald eine Version hinsichtlich Bootverhalten, Prüfsumme, Sicherheit, Installation und Wiederherstellung ausreichend geprüft ist, können offizielle Downloadinformationen und Prüfsummen hier ergänzt werden.</p>
+</div></details><details class="info-chapter" id="kapitel-11-zusammenarbeit-und-unterst-tzung" ><summary><span class="chapter-index">11</span><span>Zusammenarbeit und Unterstützung</span><span class="chapter-plus" aria-hidden="true">+</span></summary><div class="chapter-content">
+<p>SAN1Y OS wird von <strong>Sascha Santori</strong> entwickelt. Für konstruktive technische Zusammenarbeit, Tests, Designideen und Projektanfragen:</p>
+<ul>
+<li><strong>E-Mail:</strong> <a href="mailto:san1y777@icloud.com">san1y777@icloud.com</a></li>
+<li><strong>Webseite:</strong> <a href="https://san1y777.github.io/">san1y777.github.io</a></li>
+<li><strong>GitHub:</strong> <a href="https://github.com/san1y777">san1y777</a></li>
+<li><strong>Freiwillig unterstützen:</strong> <a href="https://www.paypal.me/sani1y">PayPal.me/sani1y</a></li>
+</ul>
+<p>Spenden sind freiwillig und begründen weder einen Anspruch auf Funktionen noch auf einen Veröffentlichungstermin.</p>
+</div></details><details class="info-chapter" id="kapitel-12-lizenz-und-hinweise" ><summary><span class="chapter-index">12</span><span>Lizenz und Hinweise</span><span class="chapter-plus" aria-hidden="true">+</span></summary><div class="chapter-content">
+<p>Für dieses Projekt wurde im dokumentierten Stand <strong>keine allgemeine Open-Source-Lizenz festgelegt</strong>. „Open System“ ist der Projektname beziehungsweise die Ausrichtung und stellt <strong>keine automatische Freigabe sämtlicher Dateien zur Nachnutzung</strong> dar. Vor Beiträgen, Forks oder Weiterverteilung sind die tatsächlich im Repository ausgewiesenen Lizenzbedingungen zu prüfen. Rechte an verwendeten Fremdprogrammen, Marken und Logos verbleiben bei den jeweiligen Rechteinhabern.</p>
+<hr/>
+<p>&lt;div align="center"&gt;</p>
+<p><strong>SAN1Y OS — NEXT LEVEL</strong><br/>
+<em>Eine Vision. Ein eigenes Betriebssystem. Schritt für Schritt zur stabilen Umsetzung.</em></p>
+<p>&lt;/div&gt;</p>
+</div></details></div><p class="project-footnote">Die Angaben beschreiben den dokumentierten Projektstand, keine unabhängige Prüfung des aktuellen Build-Rechners. Designbilder sind Konzeptvorschauen.</p></div></section><section id="entwickler"><div class="wrap"><div class="developer"><img src="assets/developer.webp" alt="Entwicklerporträt von Sascha Santori"><div class="info"><div class="eyebrow">Gründer & Entwickler</div><h2>Sascha Santori</h2><p>SAN1Y OS steht für die Idee, moderne Gestaltung, technische Freiheit und flexible Systemwerkzeuge in einem eigenen Linux-basierten Projekt zu vereinen.</p><p><strong>Ein Projekt. Eine Vision. NEXT LEVEL.</strong></p></div></div></div></section><section class="alt center" id="download"><div class="wrap"><div class="eyebrow">Release-Status</div><h2 class="section-title">COMING SOON</h2><p class="sub">SAN1Y OS wird weiterentwickelt. Ein öffentlicher Systemdownload ist noch nicht freigegeben.</p><a href="https://github.com/san1y777" class="btn" rel="noopener noreferrer" target="_blank">GitHub-Profil besuchen</a></div></section><section class="alt" id="unterstuetzen"><div class="wrap"><div class="eyebrow">Support & Kontakt</div><h2 class="section-title">SAN1Y OS unterstützen</h2><p class="sub">Du möchtest die unabhängige Entwicklung unterstützen oder eine Zusammenarbeit vorschlagen? Hier findest du die passenden Kontaktmöglichkeiten.</p><div class="supportgrid"><article class="supportbox"><h3>Projekt unterstützen</h3><p>Freiwillige Spenden helfen bei der Weiterentwicklung von SAN1Y OS. Es besteht keine Verpflichtung zu spenden.</p><div class="qr-frame"><img src="assets/paypal-qr.png" loading="lazy" alt="Bereitgestellter PayPal-QR-Code für freiwillige Spenden" width="600" height="600"></div><p class="center hint">PayPal-QR-Code scannen oder den Link öffnen.</p><div class="center"><a class="btn primary" href="https://www.paypal.me/sani1y" target="_blank" rel="noopener noreferrer">Über PayPal spenden</a></div></article><article class="supportbox"><h3>Zusammenarbeit & Anfragen</h3><p>Für Projektideen, technische Zusammenarbeit, Feedback oder andere Anfragen rund um SAN1Y OS.</p><p><a class="contact-link" href="mailto:san1y777@icloud.com">san1y777@icloud.com</a></p><a class="btn" href="mailto:san1y777@icloud.com?subject=SAN1Y%20OS%20%E2%80%93%20Zusammenarbeit">E-Mail schreiben</a><p class="hint">Bitte keine Passwörter, vertraulichen Daten oder Zugangscodes per E-Mail senden.</p></article></div></div></section></main><footer>© 2026 SAN1Y OS · Projekt von Sascha Santori · Unabhängiges Projekt, keine Verbindung zu genannten Plattformherstellern.</footer><dialog id="viewer" aria-label="Bildvorschau"><div class="top"><strong id="viewer-title">Vorschau</strong><button id="close-viewer" type="button">Schließen ×</button></div><img id="viewer-img" alt="Vergrößerte Konzeptvorschau"></dialog><script>const viewer=document.getElementById('viewer');document.querySelectorAll('.shot').forEach(el=>el.addEventListener('click',()=>{document.getElementById('viewer-img').src=el.dataset.img;document.getElementById('viewer-img').alt=el.dataset.title;document.getElementById('viewer-title').textContent=el.dataset.title;viewer.showModal()}));document.getElementById('close-viewer').addEventListener('click',()=>viewer.close());viewer.addEventListener('click',e=>{if(e.target===viewer)viewer.close()});</script></body></html>
